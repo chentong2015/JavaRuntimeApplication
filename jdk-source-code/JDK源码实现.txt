@@ -1,0 +1,6 @@
+Java源码: 编程语言核心API
+https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java
+
+JVM源码: 直接操作操作系统和硬件
+运行时、解释器、JIT 编译器、GC、对象模型、内存管理等
+https://github.com/openjdk/jdk/tree/master/src/hotspot/share
