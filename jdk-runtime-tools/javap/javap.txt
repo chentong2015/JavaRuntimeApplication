@@ -19,13 +19,11 @@ TODO. 查看编译后.class01文件对应的字节码指令(bytecodes instructio
   -l                               Print line number and local variable tables
   -public                          Show only public classes and members
   -protected                       Show protected/public classes and members
-  -package                         Show package/protected/public classes
-                                   and members (default)
+  -package                         Show package/protected/public classes and members (default)
   -p  -private                     Show all classes and members
   -c                               Disassemble the code 反汇编生成的.class文件
   -s                               Print internal type signatures
-  -sysinfo                         Show system info (path, size, date, SHA-256 hash)
-                                   of class being processed
+  -sysinfo                         Show system info (path, size, date, SHA-256 hash) of class being processed
   -constants                       Show final constants
   --module <module>, -m <module>   Specify module containing classes to be disassembled
   -J<vm-option>                    Specify a VM option
