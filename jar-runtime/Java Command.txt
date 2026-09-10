@@ -1,0 +1,16 @@
+> java -jar HelloWorld.jar 运行项目打包的jar包
+> java -jar HelloWorld.war 运行项目打包的war包
+> java -jar "C:\Users\xx\HelloWorld.jar" 使用全路径运行jar包
+
+TODO. 通过-cp -classpath来启动Main(.class), 支持多个加载路径
+> java -cp my-project.jar com.example.MainClass
+> java -cp my-project.jar;dependency-jars/* com.example.MainClass
+> java -cp ../target/classes -Dfile.encoding=UTF-8 com.example.MainClass
+
+TODO. & 以后台形式启动Java程序, 避免终端关闭而终止
+> nohup java -jar application.jar > app.log 2>&1 &
+  > app.log 把标准输出写到 app.log
+  2>&1 把标准错误重定向到标准输出(app.log)
+
+TODO. Java命令全集: 支持运行时参数配置
+https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
