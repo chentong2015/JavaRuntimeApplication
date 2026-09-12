@@ -1,5 +1,7 @@
 Native Function Impl
 
+private native void start0(); 带数字的方法的实现一般在OpenJDK中实现
+
 // TODO: java通过native本地方法调用openjdk底层c语言的实现
 package jdk.internal.misc;
 Unsafe.java 这个类型的很多方法都是Native方法

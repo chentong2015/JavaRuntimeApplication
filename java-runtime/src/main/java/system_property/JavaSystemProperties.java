@@ -1,3 +1,5 @@
+package system_property;
+
 import java.nio.charset.Charset;
 
 // Java程序访问(调用)系统环境的属性配置

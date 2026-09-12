@@ -1,0 +1,11 @@
+TODO. Object在内存中存储大小一定是8bits的整数倍
+空对象: 类型没有属性
+开启指针压缩: 8字节(Mark Word) + 4字节(Klass Pointer) +4字节(对齐填充) = 16字节
+未开启指针压缩: 8字节(Mark Word 64位机) + 8字节(Klass Pointer) + 0字节 = 16字节
+
+非空对象:
+开启指针压缩: 8 + 4 + 8(2个int类型的属性) + 4 = 24字节
+未开启指针压缩: 8 + 8 + 8(2个int类型的属性) + 0 = 24字节
+
+数组对象:
+Mark Word + Klass Pointer + Array Length + Elements + alignment

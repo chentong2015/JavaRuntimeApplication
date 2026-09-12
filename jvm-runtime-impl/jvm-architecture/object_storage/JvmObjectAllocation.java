@@ -1,4 +1,4 @@
-package memory.object_memory;
+package memory;
 
 // TODO. 对象分配分析:
 // 由于分配对象引用出现逃逸，导致无法在栈上直接分配和销毁

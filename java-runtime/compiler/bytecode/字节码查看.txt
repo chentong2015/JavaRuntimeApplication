@@ -1,16 +1,11 @@
-TODO. Class类文件四个概念
-1. class文件: 硬盘上静态文件
-2. class content: 将class文件内容读到内存中，在内存中数据区域
-3. class对象: 将class content中的内容解析成class，存在方法区，存储class的元数据信息
-4. 对象: 存在堆区，通过class元数据信息创建出来的实例
-
-TODO. 将十六进制字节码数据解析成字节码指令(bytecodes instructions)
- 包含JDK版本+被加载到运行时内存的数据
+TODO. 显示十六进制字节码数据的完整信息
 > javap -verbose MainApp.class
+
 Classfile /C:/Work/Work My Projects/Java Master/JvmRuntimeSectionTools/jvm-runtime-section/target/classes/compiler/bytecode/MainApp.class
   Last modified Sep 8, 2026; size 564 bytes
   SHA-256 checksum 2d3c3cebeff0675dcde76ae22f674b83ef41f5e104023104fedc8544fe2d15d0
   Compiled from "MainApp.java"
+
 public class compiler.bytecode.MainApp
   minor version: 0
   major version: 61
@@ -18,6 +13,7 @@ public class compiler.bytecode.MainApp
   this_class: #21                         // compiler/bytecode/MainApp
   super_class: #2                         // java/lang/Object
   interfaces: 0, fields: 0, methods: 2, attributes: 1
+
 Constant pool:
    #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
    #2 = Class              #4             // java/lang/Object
@@ -52,6 +48,7 @@ Constant pool:
   #31 = Utf8               [Ljava/lang/String;
   #32 = Utf8               SourceFile
   #33 = Utf8               MainApp.java
+
 {
   public compiler.bytecode.MainApp();
     descriptor: ()V
