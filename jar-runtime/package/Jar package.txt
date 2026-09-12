@@ -1,0 +1,14 @@
+TODO. 项目打包生成的JAR文件包含什么 ？配置程序的启动类
+BOOT-INF
+  - classes 编译后的字节码文件
+    src/main/java 根路径下的包名全路径
+    src/main/resources 项目的资源文件
+  - libs 项目第三方依赖及版本
+
+META-INF 源数据信息: 纯构建工具或Spring插件生成的信息有不同
+  - services    服务注入和实现
+  - MANIFEST.MF 启动类, JDK版本, 自定义属性等
+
+- license    版权申明
+- pom.xml    项目依赖(maven构建工具)
+- notice.txt 其他特殊文件

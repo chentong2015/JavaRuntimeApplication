@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: xx.xxx.
+Start-Class: xx.xxx.
+
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.6.3
+Built-By: xxx
+Build-Jdk: 11.0.2-BellSoft
+Build-ID: 000000-000000-0000-000000
