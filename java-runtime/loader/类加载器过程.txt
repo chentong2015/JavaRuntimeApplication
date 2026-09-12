@@ -1,14 +1,18 @@
-TODO. "类装载子系统"加载类的三个主要过程
-Loading: 通过特定名称找的.class文件，获取定义的二进制字节流
+TODO. "类装载子系统"加载类的三个过程
+ClassLoader会解析ClassFile并建立JVM能够使用的运行时数据结构
 
-Linking: 将二进制形式"组合"到Java虚拟机的运行时状态(run-time state)，以便后续执行
+Loading:
+通过特定名称找的.class文件，获取定义的二进制字节流
+
+Linking:
+将二进制形式"组合"到Java虚拟机的运行时状态(run-time state)，以便后续执行
    - Verification
    验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
 
    - Preparation
    为类中定义的静态变量分配内存(在方法区)，并设置类变量的初始值(该值和初始化时值可能不同)
-   TODO. creating the static fields (class variables and constants) for a class or interface
-   and initializing such fields to the default values 在这个阶段静态属性会被赋默认值
+   Creating the static fields (class variables and constants) for a class or interface
+   and initializing such fields to the default values !!
 
    - Resolution
    将常量池内"符号引用"替换成"直接引用"
@@ -16,7 +20,8 @@ Linking: 将二进制形式"组合"到Java虚拟机的运行时状态(run-time s
    "直接引用": 指向目标的指针，偏移量，或者句柄
    "句柄": 通过句柄池中的指针来指向java堆中实例池中或是方法区中的"对象类型数据"
 
-Initialization: 只有6种情况会立即执行"类的初始化", 执行类的<clinit>()静态代码块
+Initialization:
+只有6种情况会立即执行"类的初始化", 执行类的<clinit>()静态代码块
    <clinit>()并不是Java代码中直接编写的方法，而是合并类中变量的赋值和初始化动作
    JVM会保证子类的<clinit>()方法执行前，父类的<clinit>()方法已经执行完毕
    <clinit>()方法必须保证多线程的安全

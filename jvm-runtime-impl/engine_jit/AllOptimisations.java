@@ -1,7 +1,7 @@
 package jit;
 
 // TODO: HotSpot虚拟机中JIT编译器做了那些优化
-public class JITCompilerOptimisation {
+public class AllOptimisations {
 
     // TODO. 基本优化
     // 1. 方法内联优化: 取消方法调用的成本(查找方法版本，建立栈帧等)

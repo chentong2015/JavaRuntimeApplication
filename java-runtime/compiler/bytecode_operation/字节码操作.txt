@@ -1,0 +1,19 @@
+字节码查看器
+jclasslib Bytecode Viewer: https://github.com/ingokegel/jclasslib
+jclasslib bytecode editor is a tool that visualizes all aspects of compiled Java class files and the contained bytecode.
+
+字节码编辑
+org.javassist:javassist
+JAVA programming ASSISTant makes Java bytecode manipulation simple.
+It is a class library for editing bytecodes in Java.
+
+
+字节码生成器: 生成字节码，生成动态Proxy代理
+cglib: https://github.com/cglib/cglib
+Byte Code Generation Library is high level API to generate and transform Java byte code.
+It is used by AOP, testing, data access frameworks to generate dynamic proxy objects and intercept field access.
+
+字节码生成和操: Byte Buddy
+Runtime code generation for the Java virtual machine
+Byte Buddy is a code generation and manipulation library for creating and modifying Java classes
+during the runtime of a Java application and without the help of a compiler
