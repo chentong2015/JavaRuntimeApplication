@@ -1,0 +1,33 @@
+Native Function Impl
+
+// TODO: java通过native本地方法调用openjdk底层c语言的实现
+package jdk.internal.misc;
+Unsafe.java 这个类型的很多方法都是Native方法
+
+unsafe.cpp
+ UNSAFE_ENTRY(..)
+ void* x = os::malloc(sz, mtInternal); 分配内存空间，并返回指向内存空间的指针
+ return addr_to_java(x);  将指针转成java类型
+
+
+找到原生方法的C++实现实现源码
+Socket socket = new Socket("localhost", 8080);
+
+Socket.createImpl()
+ AbstractPlainSocketImpl.socketCreate()
+   class PlainSocketImpl
+   static native int socket0(boolean stream) throws IOException;
+   // 最终会调用到本地方法，OpenJdk中实现的底层方法
+
+jdk8u-jdk-master\jdk8u-jdk-master\src\windows\native\java\net
+ DualStackPlainSocketImpl.c
+ net_util_md.c
+   int NET_Socket(int domain, int type 协议的类型, int protocol) {
+      SOCKET sock;
+      // 该方法调用OS底层暴露出来的接口
+      sock = socket(domain, type, protocol);
+      if (sock != INVALID_SOCKET) {
+          SetHandleInformation((HANDLE)(uintptr_t)sock, HANDLE_FLAG_INHERIT, FALSE);
+      }
+      return (int)sock;
+   }

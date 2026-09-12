@@ -1,14 +1,13 @@
-package memory.outside_memory;
+package native_memory;
 
 import java.nio.ByteBuffer;
 
-// TODO. Java程序能够引用JVM以外的内存
-//  由于无需将其COPY到JVM的内存中，因此能够实现零拷贝的效果
+// TODO. Java程序能够引用JVM以外的内存: 实现Zero-Copy零拷贝
 public class AllocationOutsideMemory {
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        testAccessHeapMemory();
+        // testAccessHeapMemory();
         testAccessDirectMemory();
         long endTime = System.currentTimeMillis();
         System.out.println("Interval: " + (endTime - startTime) + " ms");
@@ -34,12 +33,6 @@ public class AllocationOutsideMemory {
     //    base = unsafe.allocateMemory(size);
     //    address = base;  然后将指针(引用)address属性(存的是内存地址)
     // }
-    //
-    // TODO: java通过native本地方法调用openjdk底层c语言的实现
-    // unsafe.cpp
-    // UNSAFE_ENTRY(..)
-    //    void* x = os::malloc(sz, mtInternal); 分配内存空间，并返回指向内存空间的指针
-    //    return addr_to_java(x);  将指针转成java类型
     private static void testAccessDirectMemory() {
         ByteBuffer buffer = ByteBuffer.allocateDirect(1000);
         for (int j = 0; j < 200; j++) {

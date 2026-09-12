@@ -1,5 +1,3 @@
-package api_runtime;
-
 import java.util.Scanner;
 
 // TODO. Runtime.getRuntime() Java程序运行时API操作
