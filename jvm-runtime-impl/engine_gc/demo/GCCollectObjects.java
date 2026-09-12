@@ -1,4 +1,4 @@
-package gc.demo;
+package demo;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,3 @@
-package jit;
 
 public class EscapeThisPointer {
 

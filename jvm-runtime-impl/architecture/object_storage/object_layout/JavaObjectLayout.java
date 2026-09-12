@@ -1,4 +1,4 @@
-package memory.object_layout;
+package object_storage.object_layout;
 
 import org.openjdk.jol.info.ClassLayout;
 import org.openjdk.jol.vm.VM;

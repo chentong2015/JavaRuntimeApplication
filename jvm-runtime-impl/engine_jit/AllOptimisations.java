@@ -1,4 +1,3 @@
-package jit;
 
 // TODO: HotSpot虚拟机中JIT编译器做了那些优化
 public class AllOptimisations {

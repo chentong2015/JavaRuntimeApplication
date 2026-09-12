@@ -1,4 +1,4 @@
-package gc.demo;
+package demo;
 
 public class GCCollectObjectsTest {
 

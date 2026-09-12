@@ -8,11 +8,3 @@ x86-64 CPU
 TODO. JIT即时编译器体现虚拟机最复杂的技术水平
 - JIT会在编译时执行相关优化
 - JIT会Profiling Hotspot热点代码(执行次数)调整编译策略
-
-public static void main(String[] args) { // 仅执行一次，非热点方法
-    System.out.println("Hello Test");
-}
-
-for (int i = 0; i < 1000000; i++) { // 大量次数，热点方法
-    calculate(i);
-}

@@ -1,4 +1,4 @@
-package gc.demo;
+package demo;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,11 +1,10 @@
-package memory;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryPoolMXBean;
 import java.util.List;
 
 // TODO. 获取当前JVM内存数据: 验证JVM架构的正确性
-public class JvmRuntimeMemoryPool {
+public class JvmRuntimeMemories {
 
     // Metaspace, G1 Eden Space, G1 Survivor Space, G1 Old Gen
     public static void main(String[] args) {

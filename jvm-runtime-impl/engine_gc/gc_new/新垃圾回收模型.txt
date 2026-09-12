@@ -1,6 +1,3 @@
-TODO. G1垃圾回收器深入理解
-https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
-
 TODO: 基于Region分区模型(JDK 7,8)对堆内存部分回收
 标记整理算法
 G1           : Java 9默认, STW时间约10ms: 初始标记 > 并发标记 > 最终标记 > 筛选回收
