@@ -1,0 +1,7 @@
+https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/jniTOC.html
+
+https://github.com/spbwilson/jni-example/tree/master
+https://gorden5566.com/post/1023
+https://gorden5566.com/post/1027.html
+
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/jni_obe/jni_obe.html

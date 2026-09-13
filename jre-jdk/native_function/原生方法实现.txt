@@ -1,0 +1,26 @@
+// 带数字的方法通常是原生方法
+private native void start0();
+
+TODO. Unsafe.java 类型很多方法都是Native方法
+package jdk.internal.misc;
+  unsafe.cpp
+    UNSAFE_ENTRY(..)
+      void* x = os::malloc(sz, mtInternal); 分配内存空间，并返回指向内存空间的指针
+      return addr_to_java(x);               将指针转成java类型
+
+TODO. Socket作为OS底层暴露出来的接口, Native方法最终在OpenJdk中实现
+Socket socket = new Socket("localhost", 8080);
+  Socket.createImpl()
+  AbstractPlainSocketImpl.socketCreate()
+  class PlainSocketImpl
+    static native int socket0(boolean stream) throws IOException;
+
+  net_util_md.c
+    int NET_Socket(int domain, int type, int protocol) {
+      SOCKET sock;
+      sock = socket(domain, type, protocol);
+      if (sock != INVALID_SOCKET) {
+          SetHandleInformation((HANDLE)(uintptr_t)sock, HANDLE_FLAG_INHERIT, FALSE);
+      }
+      return (int)sock;
+   }

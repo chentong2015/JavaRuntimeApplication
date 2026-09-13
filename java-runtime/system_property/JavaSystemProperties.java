@@ -1,4 +1,3 @@
-package system_property;
 
 import java.nio.charset.Charset;
 
