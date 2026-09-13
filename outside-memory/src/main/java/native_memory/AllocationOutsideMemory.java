@@ -5,18 +5,10 @@ import java.nio.ByteBuffer;
 // TODO. Java程序能够引用JVM以外的内存: 实现Zero-Copy零拷贝
 public class AllocationOutsideMemory {
 
-    public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
-        // testAccessHeapMemory();
-        testAccessDirectMemory();
-        long endTime = System.currentTimeMillis();
-        System.out.println("Interval: " + (endTime - startTime) + " ms");
-    }
-
     // ByteBuffer.allocate()
     // 使用HeapByteBuffer直接在JVM的数据区"堆"内存中分配空间
     // 添加的数据可以直接通过buffer查看
-    private static void testAccessHeapMemory() {
+    public static void main(String[] args) {
         ByteBuffer buffer = ByteBuffer.allocate(1000);
         for (int j = 0; j < 200; j++) {
             buffer.putInt(j);
