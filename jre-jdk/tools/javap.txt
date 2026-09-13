@@ -5,7 +5,7 @@
   major version: 59 -> JDK15
   major version: 61 -> JDK17
 
-TODO. 查看编译后.class01文件对应的字节码指令(bytecodes instructions)
+TODO. 查看编译后.class01文件对应的完整信息(字节码指令等)
 > javac ListNode.java
 > javap -c ListNode.class
   -c Prints disassembled code, for example, the instructions that comprise the Java bytecodes

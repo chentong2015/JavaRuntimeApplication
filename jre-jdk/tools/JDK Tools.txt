@@ -1,4 +1,0 @@
-JDK相关项目工具
-https://openjdk.org/projects/code-tools/
-
-通过JDK TOOL工具来获取JVM运行时信息和状态, 用于调优或者监控

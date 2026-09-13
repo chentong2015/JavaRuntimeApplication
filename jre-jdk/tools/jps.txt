@@ -1,12 +1,15 @@
-JPS: JVM Process Status 显示系统中所有的虚拟机进程，获取进程对应PID
+JPS: JVM Process Status
+显示系统中所有的虚拟机进程，获取进程对应PID
+
 > jps -q  仅获取PID用于脚本
+
 > jps -l  查看PID和主类名或JAR名
   7858  /home/centos/app.jar              // This is our app
   15940 JavaRuntimeAPI.pid.JavaProcessId  // This is our main class
   8580  jdk.jcmd/sun.tools.jps.Jps
   11480 org.jetbrains.jps.cmdline.Launche
 
-> jps -l | grep catalina  查找Tomcat/PID
+> jps -l | grep catalina
   54321 org.apache.catalina.startup.Bootstrap
 
 > jps -v 查看JVM参数和VM Options系统属性

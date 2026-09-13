@@ -5,8 +5,11 @@ OpenJDK 社区开源(Oracle参与)
   - Amazon Corretto
   - Redhat JDK
 
-https://openjdk.org/projects/jdk/
 https://jdk.java.net/archive/
+
+OpenJDK核心项目和Tool工具
+https://openjdk.org/projects/jdk/
+https://openjdk.org/projects/code-tools/
 
 https://adoptium.net/temurin/releases
 https://www.oracle.com/java/technologies/downloads/

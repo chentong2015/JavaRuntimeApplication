@@ -1,6 +1,6 @@
-$ jinfo 29628 显示指定PID的信息，包括JVM参数配置信息
+$ jinfo 29628 显示PID进程详细信息
 
-Java System Properties:
+Java System Properties: 环境运行时系统属性
    #Tue Jun 11 16:20:41 CEST 2024
    java.specification.version=17
    sun.cpu.isalist=amd64
@@ -70,7 +70,7 @@ Java System Properties:
    sun.io.unicode.encoding=UnicodeLittle
    java.class.version=61.0
 
-VM Flags:
+VM Flags: 相关JVM配置参数/标签
    -XX:CICompilerCount=12
    -XX:ConcGCThreads=4
    -XX:+FlightRecorder
@@ -92,11 +92,11 @@ VM Flags:
    -XX:SoftMaxHeapSize=8480882688
    -XX:+UseCompressedClassPointers
    -XX:+UseCompressedOops
-   -XX:+UseG1GC  JDK默认垃圾收集器
+   -XX:+UseG1GC
    -XX:-UseLargePagesIndividualAllocation
 
 VM Arguments: 自定义JVM参数信息
    jvm_args: -Dfile.encoding=UTF-8 -Xmx8g -Xmn4G
-   java_command: ListManager-JavaBatch.jar -options=ListManager-JavaBatch.cfg
-   java_class_path (initial): ListManager-JavaBatch.jar
+   java_command: JavaBatch.jar -options=JavaBatch.cfg
+   java_class_path (initial): JavaBatch.jar
    Launcher Type: SUN_STANDARD
