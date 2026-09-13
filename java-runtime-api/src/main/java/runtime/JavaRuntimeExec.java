@@ -1,7 +1,15 @@
+package runtime;
+
 import java.io.File;
 import java.io.IOException;
 
-public class JavaRuntimeExecAPIs {
+// TODO. Runtime.getRuntime().exec(cmd) -> Command Injection Issue
+// 直接执行用户输入的OS Command将会给系统造成安全问题
+// 1. 严格验证Commands(命令的安全性)
+// 2. 推荐使用Library来替代Commands的功能
+//
+// 通过.exec(cmd)执行.exe文件需要保证文件的执行权限
+public class JavaRuntimeExec {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         String[] cmd1 = {"mkdir", "/Users/tongchen/Desktop/testFolder"};
