@@ -1,4 +1,4 @@
-# 在Windows启动jar包程序
+# 在Windows启动jar包程序: 传递main方法参数
 
 @echo off
 java -jar ManagementAPI.jar --config.file=./conf/ManagementAPI.properties

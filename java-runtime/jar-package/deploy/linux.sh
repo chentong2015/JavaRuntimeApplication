@@ -1,4 +1,4 @@
-# 在Linux启动jar包程序
+# 在Linux启动jar包程序: 传递main方法参数
 
 #!/bin/sh
 java -jar ManagementAPI.jar --config.file=./conf/ManagementAPI.properties

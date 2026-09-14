@@ -1,7 +1,8 @@
-TODO. [options]参数设置必须在-jar之前
+TODO. [options]参数必须在设置-jar之前
 > java [options] -jar yourapp.jar
-> java -jar -Xmx1G service.jar (普通参数设置，堆内存没有改变)
-> java -Xmx1G -jar service.jar (正确的最大堆参数设置)
+
+> java -jar -Xmx1G service.jar (堆内存设置无效)
+> java -Xmx1G -jar service.jar (正确堆参数设置)
 > java -Xms1G -Xmx1G -jar service.jar (固定初始堆大小，避免扩容)
 > java -Dfile.encoding=UTF-8 -Xmx5g -XX:MetaspaceSize=512M -jar app.jar
 
@@ -81,7 +82,8 @@ Usage: java [options] <mainclass> [args...]  (to execute a class)
 
     -agentpath:<pathname>[=<options>]
                   load native agent library by full pathname
-    -javaagent:<jarpath>[=<options>]
+
+    -javaagent:<jarpath>[=<options>]  TODO. 通过Instrumentation对JVM中类加载行为修改
                   load Java programming language agent, see java.lang.instrument
 
     -splash:<imagepath>
@@ -98,6 +100,3 @@ Usage: java [options] <mainclass> [args...]  (to execute a class)
                   prevent further argument file expansion
     --enable-preview
                   allow classes to depend on preview features of this release
-
-To specify an argument for a long option,
-you can use --<name>=<value> or --<name> <value>.

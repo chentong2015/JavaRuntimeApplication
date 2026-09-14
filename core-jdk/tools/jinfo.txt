@@ -100,3 +100,16 @@ VM Arguments: 自定义JVM参数信息
    java_command: JavaBatch.jar -options=JavaBatch.cfg
    java_class_path (initial): JavaBatch.jar
    Launcher Type: SUN_STANDARD
+
+VM Flags: Linux Server参数配置信息
+  -XX:CICompilerCount=3 -XX:ConcGCThreads=1 -XX:G1ConcRefinementThreads=4
+  -XX:G1HeapRegionSize=1048576 -XX:GCDrainStackTargetSize=64
+  -XX:InitialHeapSize=134217728 -XX:MarkStackSize=4194304
+  -XX:MaxHeapSize=2120220672 -XX:MaxNewSize=1271922688
+  -XX:MinHeapDeltaBytes=1048576 -XX:MinHeapSize=8388608
+  -XX:NonNMethodCodeHeapSize=5832780 -XX:NonProfiledCodeHeapSize=122912730
+  -XX:ProfiledCodeHeapSize=122912730 -XX:ReservedCodeCacheSize=251658240
+  -XX:+SegmentedCodeCache -XX:SoftMaxHeapSize=2120220672
+  -XX:+UseCompressedClassPointers -XX:+UseCompressedOops
+  -XX:+UseFastUnorderedTimeStamps -XX:+UseG1GC --> Java15默认使用G1收集器
+  -XX:-UseLargePagesIndividualAllocati
