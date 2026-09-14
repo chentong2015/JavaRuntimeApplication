@@ -1,0 +1,7 @@
+某些Lib在运行时可能需要依赖额外的库, 添加额外的Options启动配置
+
+--add-opens java.base/java.lang=ALL-UNNAMED
+--add-opens java.base/java.time=ALL-UNNAMED
+
+--add-exports=java.base/sun.nio.ch=ALL-UNNAMED
+--add-exports=java.base/com.sun.crypto.provider=ALL-UNNAMED
