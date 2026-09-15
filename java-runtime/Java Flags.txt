@@ -1,0 +1,22 @@
+Java命令全集: 支持运行时参数配置
+https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
+
+TODO. 输出当前Java运行时Flags标签: -XX非稳定参数
+> java -XX:+PrintCommandLineFlags -version
+    -XX:G1ConcRefinementThreads=15
+    -XX:GCDrainStackTargetSize=64
+    -XX:InitialHeapSize=529909120
+    -XX:MarkStackSize=4194304
+    -XX:MaxHeapSize=8478545920
+    -XX:MinHeapSize=6815736
+    -XX:+PrintCommandLineFlags
+    -XX:ReservedCodeCacheSize=251658240
+    -XX:+SegmentedCodeCache
+    -XX:+UseCompressedClassPointers
+    -XX:+UseCompressedOops
+    -XX:+UseG1GC
+    -XX:ConcGCThreads=4
+    -XX:-UseLargePagesIndividualAllocation
+
+TODO. 输出所有能够设置的命令行Flags标签
+> java -XX:+PrintFlagsFinal -version

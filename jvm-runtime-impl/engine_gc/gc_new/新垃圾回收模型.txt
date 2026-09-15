@@ -1,26 +1,11 @@
-TODO: 基于Region分区模型(JDK 7,8)对堆内存部分回收
-标记整理算法
-G1           : Java 9默认, STW时间约10ms: 初始标记 > 并发标记 > 最终标记 > 筛选回收
-ZGC(Zero GC) : Java 11默认, STW时间约1ms: 颜色指针 / 读屏障 / 多重映射
-Shenandoah G1：JDK 17 / JDK 21默认
-Epsilon      : 做调试使用，不做部署
-
-查看当前JDK版本支持的垃圾回收器
-> java -XX:+G1 -version
-  Unrecognized VM option 'G1'
-  Error: Could not create the Java Virtual Machine.
-
-> java -XX:+UseShenandoahGC -version
-  openjdk version "17.0.10" 2024-01-16
-  OpenJDK 64-Bit Server VM Temurin-17.0.10+7
-
-垃圾回收参数设置: 使用特定垃圾收集器, 设置GC暂停时间(默认200毫秒)
--XX:+UseG1GC:
--XX:MaxGCPauseMillis:
-
-
-G1垃圾回收器
+TODO: 基于Region分区模型对堆内存部分回收
+G1垃圾回收器: JDK 9+
+STW时间约10ms: 初始标记 > 并发标记 > 最终标记 > 筛选回收
 https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
 
-Shenandoah GC:
+ZGC(Zero GC): JDK 11+
+STW时间约1ms: 颜色指针 / 读屏障 / 多重映射
+
+Shenandoah GC: JDK17, 21
+RedHat公司开发
 https://wiki.openjdk.org/spaces/shenandoah/pages/25002018/Main
