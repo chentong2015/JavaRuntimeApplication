@@ -17,3 +17,10 @@ Epsilon      : 做调试使用，不做部署
 垃圾回收参数设置: 使用特定垃圾收集器, 设置GC暂停时间(默认200毫秒)
 -XX:+UseG1GC:
 -XX:MaxGCPauseMillis:
+
+
+G1垃圾回收器
+https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
+
+Shenandoah GC:
+https://wiki.openjdk.org/spaces/shenandoah/pages/25002018/Main
