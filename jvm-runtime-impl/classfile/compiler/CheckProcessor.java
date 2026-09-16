@@ -1,4 +1,4 @@
-package javac;
+package compiler;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
@@ -9,7 +9,7 @@ import java.util.Set;
 // 插入式注解处理器 "*"表示支持所有Annotations
 @SupportedAnnotationTypes("*")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-public class AnnotationCheckProcessor extends AbstractProcessor {
+public class CheckProcessor extends AbstractProcessor {
 
     private NameChecker nameChecker;
 

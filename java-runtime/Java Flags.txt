@@ -1,10 +1,10 @@
 Java命令全集: 支持运行时参数配置
 https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
 
-输出所有能够设置的命令行Flags标签
+输出所有配置的命令行Flags标签
 > java -XX:+PrintFlagsFinal -version
 
-TODO. 输出当前Java运行时Flags标签: -XX非稳定参数
+输出当前Java运行时Flags标签: -XX非稳定参数
 > java -XX:+PrintCommandLineFlags -version
     -XX:G1ConcRefinementThreads=15
     -XX:GCDrainStackTargetSize=64

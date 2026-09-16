@@ -1,6 +1,6 @@
-package bytecode;
+package compiler;
 
-public class MainApp {
+public class AppMain {
 
     static {
         System.out.println("this is static constructor");
