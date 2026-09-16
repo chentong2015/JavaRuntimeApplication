@@ -1,10 +1,6 @@
 TODO. 启动Jar时[options]参数必须设置在-jar之前
 > java [options] -jar yourapp.jar
-
-> java -jar -Xmx1G service.jar (堆内存设置无效)
-> java -Xmx1G -jar service.jar (正确堆参数设置)
-> java -Xms1G -Xmx1G -jar service.jar (固定初始堆大小，避免扩容)
-> java -Dfile.encoding=UTF-8 -Xmx5g -XX:MetaspaceSize=512M -jar app.jar
+> java -jar -Xmx1G service.jar (能够启动, 但堆内存设置无效)
 
 运行项目jar包或war包, 支持相对路径或全路径
 > java -jar HelloWorld.jar

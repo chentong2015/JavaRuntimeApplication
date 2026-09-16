@@ -1,0 +1,12 @@
+TODO. 直接运行编译好的.class类文件
+通过-cp -classpath设置类的来源路径, 支持多个加载路径
+> java -cp classes/ system_property.JavaSystemProperties
+
+> java -cp my-project.jar com.example.MainClass
+> java -cp my-project.jar;dependency-jars/* com.example.MainClass
+
+注意斜杠和反斜杠, 支持换行设置路径
+-cp lib/cool/app/jars
+-cp "c:\\Program Files\\Java\\jre9\\lib\\ext"
+-cp "/lib/cool\
+\app/jars???

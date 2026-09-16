@@ -1,0 +1,19 @@
+TODO. (-XX)不保证支持所有JDK版本, 适合开发者性能调优配置
+
+Java 17后废弃设置永久代(不存在), 替换成元空间设置
+-XX:PermSize=size
+-XX:MaxPermSize=size
+
+元空间通常以M为单位, 建议设置Min和Max大小一致, 防止内存抖动
+-XX:MetaspaceSize=512M
+-XX:MaxMetaspaceSize=1G
+
+打印通过命令行以及JVM ergonomics(自动调优)设置的flags选项, 例如Heap和GC选项
+-XX:+PrintCommandLineFlags
+
+TODO. JVM Flag dump 打印JVM最终采用的Flag配置
+-XX:+PrintFlagsFinal
+   bool UseG1GC           = true           {product} {ergonomic}
+   size_t MaxHeapSize     = 8480882688     {product} {ergonomic}
+   size_t MetaspaceSize   = 22020096       {product} {default}
+   size_t MaxHeapSize     = 2147483648     {product} {command line}

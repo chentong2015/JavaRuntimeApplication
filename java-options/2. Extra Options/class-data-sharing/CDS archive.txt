@@ -1,5 +1,5 @@
-TODO. CDS(Class Data Sharing)
-多个JVM进程可以共享"CDS Archive"其中一部分加载类
+多个JVM进程可以共享"CDS Archive"中加载类
+
 -Xshare:auto 自动共享, 提高JVM启动速度
 -Xshare:on
 -Xshare:off  关闭共享, 以支持自定义的Boot类路径加载 => 影响速度, 不影响程序运行 !!

@@ -1,6 +1,4 @@
 TODO. 关于Module模块系统的选项
-or  java [options] -m <module>[/<mainclass>] [args...]
-or  java [options] --module <module>[/<mainclass>] [args...] (to execute the main class in a module)
 
 --list-modules list observable modules and exit
 

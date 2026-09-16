@@ -1,4 +1,0 @@
-通过-cp -classpath来启动jar包的Main, 支持多个加载路径
-> java -cp my-project.jar com.example.MainClass
-> java -cp my-project.jar;dependency-jars/* com.example.MainClass
-> java -cp ../target/classes -Dfile.encoding=UTF-8 com.example.MainClass

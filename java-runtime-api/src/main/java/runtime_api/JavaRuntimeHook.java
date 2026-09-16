@@ -1,4 +1,4 @@
-package runtime;
+package runtime_api;
 
 import java.util.Scanner;
 
@@ -16,9 +16,6 @@ public class JavaRuntimeHook {
         });
         System.out.println("Hook created and wait..");
         String input = new Scanner(System.in).nextLine();
-
-        // 以某个指定的状态推出当前的JVM虚拟机
-        // System.exit(0);
-        Runtime.getRuntime().exit(0);
+        System.out.println(input);
     }
 }

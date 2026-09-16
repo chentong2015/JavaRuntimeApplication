@@ -1,13 +1,8 @@
 TODO. (-)标准选项适用于所有JDK版本, 且向后兼容
 
-Usage: java [options] <mainclass> [args...]  (to execute a class)
-or  java [options] -jar <jarfile> [args...] (to execute a jar file)
-or  java [options] <sourcefile> [args]  (to execute a single source-file program)
-
-where options include:
 -D<name>=<value> set a system property TODO. 系统属性参数
 
--cp <class search path of directories and zip/jar files>
+-cp <class search path of directories and zip/jar files> TODO. 设置Classpath加载类的路径
 -classpath <class search path of directories and zip/jar files>
 --class-path <class search path of directories and zip/jar files>
   A ; separated list of directories, JAR archives, and ZIP archives to search for class files.
