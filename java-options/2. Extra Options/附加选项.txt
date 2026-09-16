@@ -1,0 +1,7 @@
+TODO. (-X)附加选项针对特定JDK版本不同, 不保证向后兼容
+
+The -X options are non-standard and subject to change without notice.
+-Xmn<size>  为年轻代(新生代)设置初始和最大堆大小(以字节为单位)
+-Xms<size>  设置初始Java堆大小
+-Xmx<size>  设置最大Java堆大小
+-Xss<size>  设置Java线程堆栈大小

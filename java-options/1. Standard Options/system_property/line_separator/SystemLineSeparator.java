@@ -1,4 +1,4 @@
-package line_control;
+package line_separator;
 
 // TODO. 控制字符(换行符), 不同系统的行分隔符不同
 // control characters => 0x0A (10 decimal)
@@ -7,7 +7,7 @@ package line_control;
 // - Mac (OS 9-): '\r'
 // - Mac (OS 10+): '\n'
 // - Unix/Linux: '\n'
-public class SystemLineControls {
+public class SystemLineSeparator {
 
     // TODO. 在运行时获取OS系统指定的行分隔符
     public static void main(String[] args) {

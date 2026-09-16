@@ -1,0 +1,30 @@
+TODO. Java命令全集: 支持运行时参数配置
+https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
+
+TODO. 多次设置同个Options，JVM以最右侧设置为准(验证Heap的设置)
+命令行验证: 堆空间的设置符合Option
+程序验证: 分配特定内存空间，测试大对象(无法被GC的对象)存储
+> java -Xmx1G -XX:+PrintFlagsFinal -Xmx2G 2>/dev/null | grep MaxHeapSize
+> java -Xms128m -Xmx256m -Xmx2g
+
+JVM最终采用的Flag配置 => JVM Flag dump
+> java -XX:+PrintFlagsFinal -version
+
+JVM启动过程中实际被设置/修改过的部分Flag
+包括通过命令行以及JVM ergonomics(自动调优)设置的flags
+启动时被设置/调整的一部分 flags !!
+> java -XX:+PrintCommandLineFlags -version
+    -XX:G1ConcRefinementThreads=15
+    -XX:GCDrainStackTargetSize=64
+    -XX:InitialHeapSize=529909120
+    -XX:MarkStackSize=4194304
+    -XX:MaxHeapSize=8478545920
+    -XX:MinHeapSize=6815736
+    -XX:+PrintCommandLineFlags
+    -XX:ReservedCodeCacheSize=251658240
+    -XX:+SegmentedCodeCache
+    -XX:+UseCompressedClassPointers
+    -XX:+UseCompressedOops
+    -XX:+UseG1GC
+    -XX:ConcGCThreads=4
+    -XX:-UseLargePagesIndividualAllocation

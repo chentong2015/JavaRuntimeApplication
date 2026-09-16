@@ -1,0 +1,22 @@
+TODO. 启动Jar时[options]参数必须设置在-jar之前
+> java [options] -jar yourapp.jar
+
+> java -jar -Xmx1G service.jar (堆内存设置无效)
+> java -Xmx1G -jar service.jar (正确堆参数设置)
+> java -Xms1G -Xmx1G -jar service.jar (固定初始堆大小，避免扩容)
+> java -Dfile.encoding=UTF-8 -Xmx5g -XX:MetaspaceSize=512M -jar app.jar
+
+运行项目jar包或war包, 支持相对路径或全路径
+> java -jar HelloWorld.jar
+> java -jar HelloWorld.war
+> java -jar "C:\Users\xx\HelloWorld.jar"
+
+不使用环境变量, 直接使用JDK bin目录的Java来运行
+cmd > D:\jdk-21\bin\java.exe -jar D:\app\my-app.jar
+powershell > & "D:\jdk-21\bin\java.exe" -jar "D:\app\my-app.jar"
+bash > /path/to/jdk-21/bin/java -jar /path/to/app.jar
+
+以后台形式启动Java程序, 避免终端关闭而终止
+> nohup java -jar application.jar > app.log 2>&1 &
+  > app.log 把标准输出写到 app.log
+  2>&1 把标准错误重定向到标准输出(app.log)

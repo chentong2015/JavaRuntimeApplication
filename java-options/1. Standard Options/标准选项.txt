@@ -1,0 +1,42 @@
+TODO. (-)标准选项适用于所有JDK版本, 且向后兼容
+
+Usage: java [options] <mainclass> [args...]  (to execute a class)
+or  java [options] -jar <jarfile> [args...] (to execute a jar file)
+or  java [options] <sourcefile> [args]  (to execute a single source-file program)
+
+where options include:
+-D<name>=<value> set a system property TODO. 系统属性参数
+
+-cp <class search path of directories and zip/jar files>
+-classpath <class search path of directories and zip/jar files>
+--class-path <class search path of directories and zip/jar files>
+  A ; separated list of directories, JAR archives, and ZIP archives to search for class files.
+
+-agentlib:<libname>[=<options>]   TODO. 远程调试参数
+  load native agent library <libname>, e.g. -agentlib:jdwp, see also -agentlib:jdwp=help
+
+-javaagent:<jarpath>[=<options>]  TODO. 通过Instrumentation对JVM中类加载行为修改
+  load Java programming language agent, see java.lang.instrument
+
+-version       print product version to the error stream and exit
+--version      print product version to the output stream and exit
+-showversion   print product version to the error stream and continue
+--show-version print product version to the output stream and continue
+
+-? -h -help   print this help message to the error stream
+--help        print this help message to the output stream
+-X            print help on extra options to the error stream
+--help-extra  print help on extra options to the output stream
+
+-ea[:<packagename>...|:<classname>]
+-enableassertions[:<packagename>...|:<classname>]   enable assertions with specified granularity
+-da[:<packagename>...|:<classname>]
+-disableassertions[:<packagename>...|:<classname>]  disable assertions with specified granularity
+-esa | -enablesystemassertions                      enable system assertions
+-dsa | -disablesystemassertions                     disable system assertions
+
+-agentpath:<pathname>[=<options>]  load native agent library by full pathname
+
+@argument files  one or more argument files containing options
+-disable-@files  prevent further argument file expansion
+--enable-preview allow classes to depend on preview features of this release

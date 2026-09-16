@@ -1,0 +1,10 @@
+TODO. 临时修改模块(Java 9+ JPMS)之间的访问和依赖关系
+--add-reads moduleA=moduleB
+  强制让moduleA读取(read)moduleB, 即使moduleA的module-info.java中没有写
+
+--add-opens java.base/java.lang=ALL-UNNAMED
+  允许classpath上的所有代码能对java.lang进行深度反射
+
+--add-exports=java.base/sun.nio.ch=ALL-UNNAMED
+  允许classpath上所有代码访问java.base中sun.nio.ch package的导出API
+  即使这个package在module-info.java中没有被设置export xxxx
