@@ -1,0 +1,6 @@
+Hotspot JVM 垃圾回收源码实现:
+jdk-master/src/hotspot/share/gc/...
+
+https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
+
+https://wiki.openjdk.org/spaces/shenandoah/pages/25002018/Main

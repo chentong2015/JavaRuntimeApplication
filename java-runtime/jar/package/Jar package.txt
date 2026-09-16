@@ -5,7 +5,7 @@ BOOT-INF
     src/main/resources 项目的资源文件
   - libs 项目第三方依赖及版本
 
-META-INF 源数据信息: 纯构建工具或Spring插件生成的信息有不同
+META-INF 源数据信息: 纯构建工具或Spring插件生成信息不同
   - services    服务注入和实现
   - MANIFEST.MF 启动类, JDK版本, 自定义属性等
 

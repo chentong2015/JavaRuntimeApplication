@@ -28,7 +28,7 @@ public class JavaObjectLayout {
         // 20   4                    (object alignment gap)
         // Instance size: 24 bytes
         // Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
-        StorageClass storageClass = new StorageClass(1, "test");
+        StorageClass storageClass = new StorageClass(1, "execution_engine/garbage_collector/test");
         System.out.println(ClassLayout.parseInstance(storageClass).toPrintable());
 
         // OFF  SZ   TYPE DESCRIPTION              VALUE

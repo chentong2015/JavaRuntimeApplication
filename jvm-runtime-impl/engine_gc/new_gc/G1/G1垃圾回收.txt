@@ -1,9 +1,0 @@
-G1垃圾回收器: JDK 7+ 优先收集最空的地方
-Target for multiprocessor machines with large memories
-Concurrent global marking phase to determine the liveness of objects throughout the heap.
-Then collects the regions which are mostly empty
-
-暂停时间控制: 实现用户定义的停顿时间目标
-G1 uses a pause prediction model to meet a user-defined pause time target,
-and selects the number of regions to collect based on the specified pause time target.
-G1 is not a real-time collector
