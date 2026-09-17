@@ -7,7 +7,6 @@ OpenJDK 社区开源(Oracle参与)
 
 https://jdk.java.net/archive/
 
-OpenJDK核心项目和Tool工具
 https://openjdk.org/projects/jdk/
 https://openjdk.org/projects/code-tools/
 

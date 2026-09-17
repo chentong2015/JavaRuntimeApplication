@@ -1,0 +1,7 @@
+Oracle GraalVM
+一个Java/JDK的替代实现
+一套增强版的Java开发/运行/编译工具链
+
+GraalVM Native Image
+把Java应用直接编译成操作系统的原生可执行文件, 不再依赖JVM虚拟机来运行Java代码
+优化启动速度(compiling ahead-of-time)和内存的占用
