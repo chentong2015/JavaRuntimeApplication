@@ -1,4 +1,4 @@
-TODO. (-X)附加选项针对特定JDK版本不同, 不保证向后兼容
+TODO. (-X)附加选项针对特定JDK版本不同, 不保证向后兼容 => 适合APP的使用者
 
 The -X options are non-standard and subject to change without notice.
 -Xmn<size>

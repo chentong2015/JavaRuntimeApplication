@@ -1,4 +1,4 @@
-TODO. (-XX)不保证支持所有JDK版本, 适合开发者性能调优配置
+TODO. (-XX)不保证支持所有JDK版本 => 适合开发者性能调优配置
 
 Java 17后废弃设置永久代(不存在), 替换成元空间设置
 -XX:PermSize=size
@@ -7,6 +7,10 @@ Java 17后废弃设置永久代(不存在), 替换成元空间设置
 元空间通常以M为单位, 建议设置Min和Max大小一致, 防止内存抖动
 -XX:MetaspaceSize=512M
 -XX:MaxMetaspaceSize=1G
+
+追踪JVM内存使用情况
+-XX:NativeMemoryTracking=summary
+
 
 打印通过命令行以及JVM ergonomics(自动调优)设置的flags选项, 例如Heap和GC选项
 -XX:+PrintCommandLineFlags

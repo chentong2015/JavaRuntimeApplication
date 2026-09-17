@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>java-runtime-api</module>
-        <module>outside-memory</module>
+        <module>off-heap-memory</module>
     </modules>
 
     <properties>
