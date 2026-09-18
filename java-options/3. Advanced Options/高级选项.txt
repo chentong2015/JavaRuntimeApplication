@@ -8,11 +8,16 @@ Java 17后废弃设置永久代(不存在), 替换成元空间设置
 -XX:MetaspaceSize=512M
 -XX:MaxMetaspaceSize=1G
 
+TODO. 控制堆空间的缩小和扩容
+-XX:MaxHeapFreeRatio=70 超过70%可用空间则自动缩小
+-XX:MinHeapFreeRatio=40 低于40%可用空间则自动扩展
+
+
 追踪JVM内存使用情况
 -XX:NativeMemoryTracking=summary
 
 TODO. 设置发生OOM时输出到dump文件
-> -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/path/to/heap-dump.hprof
+-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/path/to/heap-dump.hprof
 
 打印通过命令行以及JVM ergonomics(自动调优)设置的flags选项
 -XX:+PrintCommandLineFlags

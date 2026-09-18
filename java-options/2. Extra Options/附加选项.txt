@@ -14,3 +14,6 @@ The -X options are non-standard and subject to change without notice.
   macOS (64-bit): 1024 KB
   Oracle Solaris (64-bit): 1024 KB
   Windows: The default value depends on virtual memory
+
+-XshowSettings:vm
+-XshowSettings:system
