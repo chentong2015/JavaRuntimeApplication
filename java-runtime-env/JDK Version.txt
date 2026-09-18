@@ -1,7 +1,7 @@
 TODO. JDK distribution versions
 OpenJDK 社区开源(Oracle参与)
   - Oracle JDK          (Oracle编译/构建, 提供的Java JDK产品/发行版)
-  - Eclipse Temurin JDK (Eclipse Adoptium项目, 提供的OpenJDK二进制发行版)
+  - Eclipse Temurin JDK (Eclipse Adoptium项目, OpenJDK二进制发行版)
   - Amazon Corretto
   - Redhat JDK
 
