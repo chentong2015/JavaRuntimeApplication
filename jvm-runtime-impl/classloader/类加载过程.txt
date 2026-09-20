@@ -12,7 +12,7 @@ TODO. Linking
    验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
 
    - Preparation
-   为类中定义的静态变量分配内存(在方法区)，并设置类变量的初始值(该值和初始化时值可能不同)
+   为类中定义的"静态变量"分配内存(在方法区)，并设置类变量的初始值(该值和初始化时值可能不同)
    Creating the static fields (class variables and constants) for a class or interface
    and initializing such fields to the default values !!
 
