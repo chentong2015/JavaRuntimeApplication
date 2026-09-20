@@ -1,4 +1,6 @@
-G1垃圾回收器: JDK 7+ 优先收集最空的地方
+G1垃圾回收器: JDK 7+ ==> 平衡吞吐和延迟
+
+优先收集最空的地方
 Target for multiprocessor machines with large memories
 Concurrent global marking phase to determine the liveness of objects throughout the heap.
 Then collects the regions which are mostly empty

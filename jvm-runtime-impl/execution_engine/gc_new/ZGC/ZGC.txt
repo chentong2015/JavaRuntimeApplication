@@ -1,3 +1,22 @@
-ZGC(Zero GC): JDK 11+
-STW约1ms: 颜色指针 / 读屏障 / 多重映射
-偏向实验室性质
+ZGC(Zero GC): JDK 11+ => 极低停顿、大堆 !!
+
+并发清除和低延迟(1ms): APP不中断 !!
+A scalable low latency garbage collector
+ZGC performs all expensive work concurrently, without stopping the execution of app threads for more than a millisecond
+
+TODO. Setting the Heap Size (-Xmx)
+堆大小无关, 越大内存效果越好
+ZGC works well with heap sizes from a few hundred megabytes to 16TB.
+The more memory you give to ZGC the better
+
+TODO. Setting Num of Concurrent GC Threads (-XX:ConcGCThreads)
+增加GC并行线程数等效于给GC更多的CPU时间, 但会压缩程序的CPU时间
+how much CPU-time the GC should be given
+
+TODO. Returning Unused Memory to OS (-XX:-ZUncommit)
+将未使用到的内存退还给OS, 但自身堆的内存可能降低到-Xms最小堆大小之下
+By default, ZGC uncommits unused memory, returning it to the operating system.
+
+TODO. Using Large Pages (-XX:+UseLargePages)
+Configuring ZGC to use large pages will generally yield better performance
+(in terms of throughput, latency and start up time) and comes with no real disadvantage !!
