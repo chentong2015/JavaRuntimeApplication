@@ -1,2 +1,0 @@
-Shenandoah GC: JDK17, 21
-RedHat公司开发, G1的增强版本

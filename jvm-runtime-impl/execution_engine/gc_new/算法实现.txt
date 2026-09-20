@@ -3,4 +3,8 @@ jdk-master/src/hotspot/share/gc/...
 
 https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
 
+https://docs.oracle.com/en/java/javase/17/gctuning/z-garbage-collector1.html
+
+Shenandoah GC: JDK17, 21
+RedHat公司开发, G1的增强版本
 https://wiki.openjdk.org/spaces/shenandoah/pages/25002018/Main
