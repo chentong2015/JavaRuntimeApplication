@@ -6,3 +6,5 @@ JVM标准参数, 用于加载本地原生的agent库
 
 先启动远程Server上的java应用, 再启动本地项目进行Debug监听
 > java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar application.jar
+&
+> java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:5005 -jar application.jar
