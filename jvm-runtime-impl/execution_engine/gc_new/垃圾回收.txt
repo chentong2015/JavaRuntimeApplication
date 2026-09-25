@@ -1,14 +1,15 @@
 Garbage Collection:
-字节码执行引擎在后台开启的一个线程，负责回收垃圾对象
+字节码执行引擎在后台开启的多个线程，负责回收垃圾对象
 垃圾回收器会触发额外的线程，清除和回收内存堆中已经死亡或长时间没有使用的对象
 频繁的GC垃圾回收会影响程序性能 !!
 
-TODO. Stop-the-World Event
-在GC过程中会遍历堆中所有对象，判断是否是"垃圾对象"，这个过程会STW，之后立马再恢复线程的执行
-如果在这个过程中，允许线程运行，那么这个对象的状态会不停的变化，导致GC标记失效
+TODO. Stop-the-World ? 暂停全部Java代码
+在GC过程中会遍历堆中所有对象，在标记是否是垃圾对象时会STW，之后立马恢复线程执行
+如果在这个过程中允许线程运行，那么这个对象的状态会不停的变化，导致GC标记失效
+If an application thread is executing in native code (i.e., JNI),
+it is allowed to continue, but will block if it attempts to cross the native boundary into Java code.
 
-TODO. Live Objects ?
-Reachability Analysis :
+TODO. Live Objects ? Reachability Analysis
 以"GC Roots"(线程栈局部变量, 静态变量)为起点，分析对象的可达性 !! =>
 且"GC Roots"必须是当前线程栈帧中可达且被GC/JIT认为活跃的引用
 通常至少两次Mark标记, 通常标记时需要STW机制来保证标记准确

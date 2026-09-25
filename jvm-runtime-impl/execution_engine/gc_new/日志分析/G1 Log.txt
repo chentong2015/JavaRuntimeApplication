@@ -1,5 +1,6 @@
 TODO. 根据G1日志性分析性能: Young GC 或 Mixed GC
 -verbosegc
+
 -XX:+PrintGC
 [GC pause (G1 Humongous Allocation) (young) (initial-mark) 24M- >21M(64M), 0.2349730 secs]
 [GC pause (G1 Evacuation Pause) (mixed) 66M->21M(236M), 0.1625268 secs]

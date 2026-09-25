@@ -1,9 +1,12 @@
-JIT即时编译器
-- 把加载到内存的二进制数据边编译成机器码(硬件指令级，操作系统)
-- 根据Hotspot热点代码(执行次数)动态优化, 优先变异到代码缓存
+TODO. 即时编译器将Hotspot热点代码编译成机器码, 并缓存后OS直接执行
+80% of execution time is spent in executing 20% of code
 
-机器码是什么样的 ?
-x86-64 CPU
-  48 8b 05 ...
-  48 89 ...
-  e8 ...
+During runtime it gathers statistics, finds the "hot" code,
+compiles it from JVM interpreted bytecode (in .class files) to a native code (machine code)
+that is executed directly by Operating System and heavily optimizes it.
+
+实现的效果: 比解释器解释执行快10倍以上
+JITed code runs 10 to 20 times faster than interpreted code.
+
+JIT compiler threads: 编译器执行时的线程
+These threads perform runtime compilation of bytecode to machine code.
