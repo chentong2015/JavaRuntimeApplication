@@ -1,11 +1,11 @@
-Shenandoah GC: JDK 11+ => 极低停顿、并发压缩(concurrent compaction)
+Shenandoah GC: JDK 11+ => 需要测试, 对性能不保证 !!
 
-并发清除和低Pause时间(1..10ms): APP不中断 !!
+并发清除(APP不中断)和极低Pause停顿(1..10ms):
 Low GC pause times by performing more garbage collection work concurrently with the running Java program.
 
 TODO. 停顿时间不受堆大小影响
 Pause times are no longer directly proportional to the size of the heap.
 Garbage collecting a 200 GB heap or a 2 GB heap should have the similar low pause behavior.
 
-TODO. Heap sizes 总的性能和堆大小有关, 需要测试
+TODO. Heap sizes 总的性能和堆大小有关
 Shenandoah performance, like the performance of almost all other GCs, depends on heap size.

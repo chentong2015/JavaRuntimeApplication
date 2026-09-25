@@ -14,7 +14,7 @@ TODO. 控制堆空间的缩小和扩容
 追踪JVM内存使用情况
 -XX:NativeMemoryTracking=summary
 
-TODO. 设置发生OOM时输出到dump文件
+TODO. 发生OOM时输出到dump文件: 默认输出到工作根目录 java_pid<pid>.hprof
 -XX:+HeapDumpOnOutOfMemoryError
 -XX:HeapDumpPath=/path/to/heap-dump.hprof
 

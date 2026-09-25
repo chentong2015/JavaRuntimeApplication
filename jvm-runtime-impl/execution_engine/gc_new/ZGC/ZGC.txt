@@ -1,11 +1,10 @@
-ZGC(Zero GC): JDK 11+ => 极低停顿、大堆 !!
+ZGC(Zero GC): JDK 11+ => 适合大堆, 小堆没有优势 !!
 
-并发清除和低延迟(1ms): APP不中断 !!
+并发清除(APP不中断)和极低延迟(1ms):
 A scalable low latency garbage collector
 ZGC performs all expensive work concurrently, without stopping the execution of app threads for more than a millisecond
 
-TODO. Setting the Heap Size (-Xmx)
-堆大小无关, 越大内存效果越好
+TODO. Setting the Heap Size (-Xmx) 越大内存效果越好
 ZGC works well with heap sizes from a few hundred megabytes to 16TB.
 The more memory you give to ZGC the better
 
