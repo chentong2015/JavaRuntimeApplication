@@ -1,4 +1,4 @@
-package JavaReflection.beans;
+package beaninfo;
 
 import java.beans.BeanInfo;
 import java.beans.Introspector;
@@ -11,8 +11,7 @@ public class JavaBeanIntrospector {
 
     // TODO. 属性具有Getter方法才能获取PropertyDescriptors
     public static void main(String[] args) throws Exception {
-        PropertyDescriptor[] descriptors = Introspector.getBeanInfo(BeanDemo.class)
-                .getPropertyDescriptors();
+        PropertyDescriptor[] descriptors = Introspector.getBeanInfo(BeanDemo.class).getPropertyDescriptors();
         System.out.println(descriptors[1].getPropertyType());
 
         BeanKeyword beanKeyword = new BeanKeyword(1, "id", "des");

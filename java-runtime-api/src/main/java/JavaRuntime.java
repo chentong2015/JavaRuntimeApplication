@@ -1,5 +1,3 @@
-package runtime_api;
-
 // TODO. Runtime.getRuntime() 获取程序运行时系统信息
 public class JavaRuntime {
 

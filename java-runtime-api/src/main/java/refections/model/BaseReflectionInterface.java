@@ -1,4 +1,4 @@
-package JavaReflection.model;
+package refections.model;
 
 public interface BaseReflectionInterface {
 }

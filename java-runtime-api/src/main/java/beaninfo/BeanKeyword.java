@@ -1,4 +1,4 @@
-package JavaReflection.beans;
+package beaninfo;
 
 // Java Bean Class
 public class BeanKeyword {

@@ -1,4 +1,4 @@
-package JavaReflection.beans;
+package beaninfo;
 
 public class BeanDemo {
 

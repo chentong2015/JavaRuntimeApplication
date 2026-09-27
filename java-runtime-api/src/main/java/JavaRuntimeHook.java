@@ -1,5 +1,3 @@
-package runtime_api;
-
 import java.util.Scanner;
 
 // 创建程序关闭时的Hook，可在程序被异常关闭时执行额外操作

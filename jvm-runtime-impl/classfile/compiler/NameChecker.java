@@ -1,4 +1,3 @@
-package compiler;
 
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;

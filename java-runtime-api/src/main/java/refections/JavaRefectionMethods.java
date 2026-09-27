@@ -1,7 +1,7 @@
-package JavaReflection;
+package refections;
 
-import JavaReflection.model.BaseAnnotation;
-import JavaReflection.model.BaseReflectionClass;
+import refections.model.BaseAnnotation;
+import refections.model.BaseReflectionClass;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
@@ -11,16 +11,14 @@ public class JavaRefectionMethods {
 
     // TODO. 通过反射创建类型实例，调用指定名称的方法(传递指定类类型的参数)
     public static void main(String[] args) throws Exception {
-        Class cls = Class.forName("JavaReflection.model.BaseReflectionClass");
-        System.out.println(cls.getPackageName());
+        Class<?> cls = Class.forName("refections.model.BaseReflectionClass");
+        System.out.println(cls.getPackageName()); // refections.model
+        System.out.println(cls.getClassLoader()); // AppClassLoader
 
-        // 需要创建实例对象才能通过放射调用方法
+        // 创建实例对象后调用方法，参数类型必须匹配
         BaseReflectionClass baseReflectionClass = (BaseReflectionClass) cls.newInstance();
-
-        // 这里传递的参数必须类型匹配，否则抛出如下异常
-        // java.lang.IllegalArgumentException: argument type mismatch
         Method method = cls.getMethod("printString", String.class);
-        method.invoke(baseReflectionClass, false);
+        method.invoke(baseReflectionClass, "value1");
     }
 
     // Retrieve the list of methods defined in the class

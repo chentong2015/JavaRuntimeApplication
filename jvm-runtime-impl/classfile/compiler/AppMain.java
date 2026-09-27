@@ -1,5 +1,3 @@
-package compiler;
-
 public class AppMain {
 
     static {

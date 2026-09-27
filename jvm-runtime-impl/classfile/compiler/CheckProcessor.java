@@ -1,4 +1,3 @@
-package compiler;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;

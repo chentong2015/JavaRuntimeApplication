@@ -1,4 +1,4 @@
-package JavaReflection.model;
+package refections.model;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

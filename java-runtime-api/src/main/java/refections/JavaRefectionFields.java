@@ -1,6 +1,6 @@
-package JavaReflection;
+package refections;
 
-import JavaReflection.model.BaseReflectionClass;
+import refections.model.BaseReflectionClass;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -10,7 +10,7 @@ import java.lang.reflect.Type;
 public class JavaRefectionFields {
 
     private void getClassFields() throws ClassNotFoundException {
-        Class clazz = Class.forName("com.example.main.ClassName");
+        Class<?> clazz = Class.forName("com.example.main.ClassName");
         Field[] fieldList = clazz.getDeclaredFields();
         Field checkFiled = fieldList[0];
 
