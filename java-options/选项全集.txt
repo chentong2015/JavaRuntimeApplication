@@ -1,11 +1,11 @@
 Java命令全集: 运行时支持的选项
 https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
 
-Usage: java [options] <mainclass> [args...] (to execute a class)
-or  java [options] -jar <jarfile> [args...] (to execute a jar file)
-or  java [options] <sourcefile> [args]      (to execute a single source-file program)
-or  java [options] -m <module>[/<mainclass>] [args...]
-or  java [options] --module <module>[/<mainclass>] [args...] (to execute the main class in a module)
+java [options] <mainclass> [args...] (to execute a class)
+java [options] -jar <jarfile> [args...] (to execute a jar file)
+java [options] <sourcefile> [args]      (to execute a single source-file program)
+java [options] -m <module>[/<mainclass>] [args...]
+java [options] --module <module>[/<mainclass>] [args...] (to execute the main class in a module)
 
 TODO. 重复设置Option则以最右侧为准
 > java -Xmx1G -Xmx2G -XX:+PrintFlagsFinal | grep MaxHeapSize
