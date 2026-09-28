@@ -1,0 +1,14 @@
+TODO. 先编译再运行单个main()主类
+> javac MainClass.java
+> java MainClass
+
+TODO. 通过-classpath选项加载多个.class类文件, 使用全路径运行main()主类
+> java -cp classes/ com.example.MainClass  加载多个.class文件
+
+> java -cp my-project.jar com.example.MainClass 加载jar包中的class文件
+
+> java -cp my-project.jar;dependency-jars/* com.example.MainClass 加载多个jar包文件
+
+> java -cp lib/cool/app/jars com.example.MainClass 加载执行目录下的.class文件
+
+> java -cp "c:\\Program Files\\Java\\jre9\\lib\\ext" com.example.MainClass
