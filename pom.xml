@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>java-runtime-api</module>
+        <module>java-runtime</module>
         <module>off-heap-memory</module>
     </modules>
 

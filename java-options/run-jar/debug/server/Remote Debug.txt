@@ -1,0 +1,11 @@
+TODO. 配置远程Java应用Agentlib, 启动监听进行远程debug
+> java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar application.jar
+
+> java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:5005 -jar application.jar
+  Listening for transport dt_socket at address: 5005
+
+server=y        Java应用作为Debug Server
+suspend=n       启动时不等待Debugger连接
+suspend=y       必须Debugger连接上才启动Java应用
+address=*:5005  监听所有网络5005端口
+dt_socket       基于Socket来传输通讯(监听)

@@ -1,0 +1,14 @@
+docker build -t myapp-image .           构建镜像
+docker run -d -p 8080:8080 myapp-image  普通启动
+
+Debug启动容器中的Java应用: 传递环境变量参数
+docker run -d \
+  -p 8080:8080 \
+  -p 5005:5005 \
+  -e 'JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005' \
+  myapp-image
+
+通过对外暴露的5005端口进行Debug
+宿主机                  Docker 容器
+localhost:8080  ────>  8080  Java HTTP
+localhost:5005  ────>  5005  JDWP Debug

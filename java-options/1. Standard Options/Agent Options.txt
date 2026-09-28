@@ -1,0 +1,11 @@
+-agentlib:<libname>[=<options>]
+  load native agent library <libname>, e.g. -agentlib:jdwp, see also -agentlib:jdwp=help
+  标准选项, 加载原生的本地agent库
+  -agentlib:hprof 用于获取jvm的运行情况和数据
+  -agentlib:jdwp  用于Java Debug Wire Protocol远程调试协议
+
+-javaagent:<jarpath>[=<options>]
+  load Java programming language agent, see java.lang.instrument
+  加载程序语言的Agent, 可通过Instrumentation对JVM中类加载行为修改
+
+-agentpath:<pathname>[=<options>]  load native agent library by full pathname

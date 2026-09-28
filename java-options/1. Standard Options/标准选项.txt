@@ -1,17 +1,13 @@
 TODO. (-)标准选项适用于所有JDK版本, 且向后兼容
 
--D<name>=<value> set a system property TODO. 系统属性参数
+系统属性参数
+-D<name>=<value> set a system property
 
--cp <class search path of directories and zip/jar files> TODO. 设置Classpath加载类的路径
+设置Classpath加载类的路径
+-cp <class search path of directories and zip/jar files>
 -classpath <class search path of directories and zip/jar files>
 --class-path <class search path of directories and zip/jar files>
-  A ; separated list of directories, JAR archives, and ZIP archives to search for class files.
-
--agentlib:<libname>[=<options>]   TODO. 远程调试参数
-  load native agent library <libname>, e.g. -agentlib:jdwp, see also -agentlib:jdwp=help
-
--javaagent:<jarpath>[=<options>]  TODO. 通过Instrumentation对JVM中类加载行为修改
-  load Java programming language agent, see java.lang.instrument
+    A ; separated list of directories, JAR archives, and ZIP archives to search for class files.
 
 -version       print product version to the error stream and exit
 --version      print product version to the output stream and exit
@@ -29,8 +25,6 @@ TODO. (-)标准选项适用于所有JDK版本, 且向后兼容
 -disableassertions[:<packagename>...|:<classname>]  disable assertions with specified granularity
 -esa | -enablesystemassertions                      enable system assertions
 -dsa | -disablesystemassertions                     disable system assertions
-
--agentpath:<pathname>[=<options>]  load native agent library by full pathname
 
 @argument files  one or more argument files containing options
 -disable-@files  prevent further argument file expansion
